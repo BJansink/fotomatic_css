@@ -53,6 +53,7 @@ header {
   display: flex;
   align-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 header .content {
@@ -243,6 +244,7 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  width: auto;
 }
 
 .feature {
@@ -258,11 +260,21 @@ header .mobile {
   margin: 0 auto;
 }
 
+.feature .image-container img {
+  max-width: 100%;
+}
+
+
 .feature h2 {
-  padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.feature .content {
+  height: 120px;
 }
 
 .feature h3 {
@@ -270,6 +282,7 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+  margin-top: 2px;
 }
 
 @media only screen and (max-width: 890px) {
