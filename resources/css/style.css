@@ -326,6 +326,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  margin: 0px;
 }
 
 #filters-section .content h3 {
@@ -333,11 +334,18 @@ header .mobile {
   line-height: 1.4;
   font-weight: 300;
   color: white;
+  margin: 0px;
 }
 
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: inline-flex;
+
+}
+
+#filters-section .images-container img {
+  max-width: 100%;  
 }
 
 @media only screen and (max-width: 760px) {
@@ -376,14 +384,14 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
-  padding: 5rem 0;
+#quotes-section .content {
+  padding: 80px;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
-  font-size: 1.875rem;
+  font-size: 30px;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
@@ -398,10 +406,6 @@ header .mobile {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
-    font-size: 1.5rem;
-    line-height: 1.4;
-  }
 
   #quotes-section quote-citation {
     display: block;
